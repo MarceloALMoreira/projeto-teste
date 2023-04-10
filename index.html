@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;700&display=swap" rel="stylesheet">
+    <title>Calculadora de jornada</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>CALCULADORA DE HORAS TRABALHADAS</h1>
+        </header>
+
+        <main>
+            <p class="aqui">Digite aqui o valor da sua hora de trabalho:</p>
+            <input type="text" placeholder="R$ 25,00" id="horatrabalho">
+
+            <p class="inicial">Hora que você chegou:</p>
+            <input type="text" placeholder="07:30" id="chegou">
+
+            <p class="saida">Saída para o intervalo:</p>
+            <input type="text" placeholder="11:55" id="intervalo">
+
+            <p class="retorno">Retorno do intervalo:</p>
+            <input type="text" placeholder="13:30" id="retorno">
+            <p class="final">Hora que você foi embora:</p>
+
+            <input type="text" placeholder="18:30" id="embora"> <br>
+
+            <button id="botao-calcular" type="button" onclick="calcularValores()">Calcular</button>
+
+            <p class="jornada">A sua jornada de trabalho foi de:</p>
+            <p class="receber">E o valor a receber é de:</p>
+        </main>
+    </div>
+</body>
+<script src="./calculo.js"></script>
+
+</html>

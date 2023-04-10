@@ -1,0 +1,101 @@
+/* Estilo geral */
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+}
+
+body.claro {
+    background-color: #fff;
+    color: #333;
+}
+
+body.escuro {
+    background-color: #333;
+    color: #fff;
+}
+
+#modo-claro-escuro {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.darkmode {
+    background-color: rgba(136, 213, 2, 0.781);
+    border: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    font-size: 16px;
+}
+
+button[type="button"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="button"]:hover {
+    background-color: #555;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+span {
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+span {
+    font-weight: bold;
+}

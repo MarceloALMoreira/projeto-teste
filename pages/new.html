@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <title>Calculadora de horas trabalhadas</title>
+</head>
+
+<body class="claro">
+    <h1>Calculadora de horas trabalhadas</h1>
+    <button class="darkmode" id="modo-claro-escuro" onclick="toggleTheme()">Modo Claro / Escuro</button>
+
+
+    <form>
+        <label for="nome-funcionario">Nome do funcionário:</label>
+        <input type="text" id="nome-funcionario" required>
+
+        <label for="valor-hora">Valor da hora trabalhada:</label>
+        <input type="text" id="valor-hora" placeholder="R$" required>
+
+        <label for="hora-chegada">Hora de chegada:</label>
+        <input type="time" id="hora-chegada" required>
+
+        <label for="hora-saida">Hora de saída:</label>
+        <input type="time" id="hora-saida" required>
+
+        <label for="hora-intervalo">Hora do início do intervalo:</label>
+        <input type="time" id="hora-intervalo">
+
+        <label for="duracao-intervalo">Duração do intervalo:</label>
+        <input type="time" id="duracao-intervalo">
+
+        <button type="button" onclick="calcularHoras()">Calcular</button>
+        <button type="button" onclick="limparValores()">Limpar</button>
+
+        <span id="ddd"></span>
+
+        <hr>
+        <p>Horas trabalhadas: <span id="horas-trabalhadas"></span></p>
+        <p>Valor a receber: R$ <span id="valor-receber"></span></p>
+
+    </form>
+
+
+
+</body>
+<script src="../calculo.js"></script>
+
+</html>
